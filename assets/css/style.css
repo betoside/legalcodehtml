@@ -1,0 +1,619 @@
+@font-face {
+    font-family: 'spaceage';
+    src: url('fonts/spaceage.eot');
+    src: url('fonts/spaceage.eot') format('embedded-opentype'),
+         url('fonts/spaceage.woff2') format('woff2'),
+         url('fonts/spaceage.woff') format('woff'),
+         url('fonts/spaceage.ttf') format('truetype'),
+         url('fonts/spaceage.svg#spaceage') format('svg');
+}
+@font-face {
+    font-family: 'BiomeW04Regular';
+    src: url('fonts/BiomeW04Regular.eot');
+    src: url('fonts/BiomeW04Regular.eot') format('embedded-opentype'),
+         url('fonts/BiomeW04Regular.woff2') format('woff2'),
+         url('fonts/BiomeW04Regular.woff') format('woff'),
+         url('fonts/BiomeW04Regular.ttf') format('truetype'),
+         url('fonts/BiomeW04Regular.svg#BiomeW04Regular') format('svg');
+}
+.dn {
+    display: none;
+}
+.spaceage { 
+    font-family: 'spaceage';
+}
+.BiomeW04Regular { 
+    font-family: 'BiomeW04Regular';
+}
+body { 
+    font-family: 'BiomeW04Regular', sans-serif; 
+    font-weight: 300; 
+    background: #000;
+}
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+header {
+    background-color: #000000;
+}
+header .container {
+    height: 105px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px 0 60px;
+}
+.logo {
+    width: 211px;
+    height: 72px;
+}
+.logo a {
+    width: 211px;
+    height: 72px;
+    text-decoration: none;
+    display: inline-block;
+}
+.logo a svg {
+    cursor: pointer;
+}
+.nav-social {
+    display: flex;
+}
+.main-nav {
+    list-style: none;
+    display: flex;
+}
+.main-nav li {
+    padding: 0 45px;
+}
+.main-nav a {
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #f8b032;
+    line-height: 105px;
+}
+.social {
+    display: flex;
+    height: 105px;
+    align-items: center;
+}
+.social li {
+    padding-left: 5px;
+    list-style: none;
+}
+.social li a {
+    display: inline-block;
+    width: 21px;
+}
+.social li a svg {
+    fill: #F8B032;
+}
+.slider-area {
+    background-color: #000;
+    text-align: center;
+}
+.slider-area img {
+    max-width: 100%;
+}
+.apresentacao {
+    background: url(../images/apresentacao.jpg) no-repeat #000;
+    /* background-size: cover; */
+    background-position: center;
+    border-bottom: 1px solid #5f4201;
+
+}
+.apresentacao .container {
+    padding: 85px 85px 70px 85px;
+    color: #f19004;
+}
+.apresentacao .texto {
+    width: 56%;
+    line-height: 140%;
+}
+.apresentacao .texto p {
+    margin-top: 20px;
+}
+.apresentacao .texto p:first-child {
+    margin-top: 0;
+}
+.borda-horizontal {
+    border-bottom: 1px solid #b99607;
+}
+.legalcode {
+    border-top: 1px solid #deb608;
+    /* padding-bottom: 300px; */
+    background: #000;
+    /* 
+    background: url(../svg/legalcode-grafismo.svg) no-repeat #000;
+    background-size: 100%;
+    background-position: center bottom;
+    */
+}
+.legalcode .container {
+    padding-top: 80px;
+}
+.legalcode .logo {
+    margin: 0 auto 40px;
+    width: 586px;
+    min-height: 200px;
+}
+.legalcode .areas {
+    text-align: center;
+    position: relative;
+}
+.legalcode .areas div {
+    color: #f19004;
+    font-family: 'spaceage';
+    font-size: 40px;
+    position: absolute;
+}
+
+    .legalcode .areas .aI { left: calc(27% - 270px); top: calc(22%); }
+    .legalcode .areas .rpa { left: calc(72%); top: calc(22%); }
+    .legalcode .areas .risk { left: calc(27% - 115px); top: calc(70%); }
+    .legalcode .areas .assembly { left: calc(72%); top: calc(70%); }
+
+.legalcode .areas div span {
+    color: #f8b032;
+}
+
+
+.legalcode .areas img {
+    max-width: 100%;
+}
+.legalcode .grafismo {
+    height: 420px;
+    background: url(../images/legalcode-grafismo.jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.doc-understanding {
+    background: url(../images/bg-understanding.jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.titulo {
+    padding: 0 160px;
+}
+.titulo h2 {
+    color: #f19004;
+    font-size: 42px;
+    font-family: 'spaceage';
+    padding: 0 45px 14px;
+    margin: 0 0 20px;
+    border-bottom: 3px solid #f8af31;
+    text-align: center;
+}
+.titulo p {
+    padding: 0 55px;
+    font-size: 19px;
+    color: #f8b032;
+}
+.mb-padrao-understanding {
+    margin-bottom: 140px;
+}
+.template1 {
+    display: flex;
+    padding: 0 120px;
+    margin-bottom: 130px;
+}
+.template1 .ilustracao {
+    width: 40%;
+    padding-left: 50px;
+}
+.template1 .ilustracao img {
+    max-width: 100%;
+}
+
+.template1 .conteudo {
+    flex: 1;
+    padding-top: 10px;
+}
+.template1 .conteudo h3 {
+    margin: 0 0 20px 0;
+    color: #f19004;
+    font-family: 'spaceage';
+    font-size: 42px;
+}
+.template1 .conteudo p {
+    color: #f8b032;
+}
+
+    .template2 {
+        margin-bottom: 160px;
+    }
+    .template2 .ilustracao {
+        width: 26%;
+        padding-right: 25px;
+        padding-left: 10px;
+        order: 2;
+    }
+    .template2 .conteudo {
+        flex: 1;
+        padding-top: 20px;
+    }
+
+.mb-40 {
+    margin-bottom: 40px;
+}
+.pb-40 {
+    padding-bottom: 40px;
+}
+
+.inteligencia-melhoria .container {
+    margin-bottom: 150px;
+}
+.inteligencia-melhoria .container {
+    display: flex;
+}
+.inteligencia-melhoria .grafico,
+.inteligencia-melhoria .pontos {
+    flex: 1;
+}
+
+.inteligencia-melhoria .grafico {
+    text-align: center;
+}
+.inteligencia-melhoria .grafico img {
+    max-width: 100%;
+}
+.inteligencia-melhoria .pontos {
+    color: #f8b032;
+    font-size: 21px;
+    padding-top: 50px;
+    padding-left: 35px;
+}
+.inteligencia-melhoria .pontos ul li {
+    margin-bottom: 25px;
+}
+
+.fale { margin-bottom: 140px; }
+.fale .titulo {
+    margin-bottom: 45px;
+}
+.fale-body {
+    display: flex;
+    flex-wrap: wrap;
+}
+.fale-body-field {
+    flex: 50%;
+    margin-bottom: 20px;
+    padding-right: 25px;
+
+}
+.fale-body-field.bt,
+.fale-body-field.msg {
+    flex: 100%;
+}
+.fale-body-field.msg textarea{
+    width: 100%;
+    height: 150px;
+    border: 2px solid #f8b032;
+    font-size: 17px;
+    color: #000;
+    padding: 10px;
+    outline: 0;
+}
+.fale-body-field.bt { 
+    text-align: right; 
+}
+.fale-body-field label {
+    font-size: 22px;
+    font-weight: 500;
+    color: #f8b032;
+    text-transform: uppercase;
+    display: block;
+    margin-bottom: 8px;
+}
+.fale-body-field input{
+    padding: 10px;
+    border: 2px solid #f8b032;
+    width: 100%;
+    /* margin-right: 27px; */
+    font-size: 17px;
+    color: #000;
+    outline: 0;
+}
+.bt-enviar {
+    font-size: 19px;
+    color: #f8b032;
+    text-transform: uppercase;
+    border: 2px solid #f8b032;
+    padding: 15px 15px 13px 15px;
+    border-radius: 10px;
+    background-color: #000;
+    cursor: pointer;
+}
+.bt-enviar:hover {
+    border: 3px solid #f19004;
+    color: #f19004;
+}
+
+footer { border-bottom: 24px solid #f8af31; }
+footer .container { display: grid; grid-template-columns: 340px auto 105px; padding-bottom: 55px; }
+footer .logo,
+footer .logo a { width: 340px; height: 115px; }
+footer .linha-container { padding: 61px 25px 0; }
+footer .linha-container .linha { border-bottom: 7px solid #f8af31; }
+footer .nav-social { padding-top: 14px; width: 105px; }
+
+@media (max-width:1110px) {
+
+    .main-nav li {
+        padding: 0 20px;
+    }
+    .titulo {
+        padding: 0 50px;
+    }
+    .legalcode .areas {
+        padding: 0 30px;
+    }
+    .fale-body {
+        padding-left: 25px;
+    }
+    footer .container {
+        padding: 0 25px;
+    }
+
+}
+
+@media (max-width:768px) {
+    .logo {
+        width: 180px;
+    }
+    .main-nav li {
+        padding: 0 15px;
+    }
+    .main-nav a {
+        font-size: 12px;
+        line-height: 104px;
+    }
+    header .container {
+        padding-left: 30px;
+    }
+    .legalcode .logo {
+        width: 400px;
+    }
+    .template1 {
+        padding: 0 70px;
+    }
+    .template1 .ilustracao {
+        padding-left: 0;
+    }
+    .template2 .ilustracao {
+        width: 30%;
+        padding-right: 0;
+    }
+    .template2 .conteudo {
+        padding-right: 70px;
+    }
+
+    .titulo h2 {
+        font-size: 30px;
+    }
+    .titulo p {
+        font-size: 15px;
+    }
+    .template1 .conteudo h3 {
+        font-size: 32px;
+    }
+    .template1 .conteudo p {
+        font-size: 13px;
+    }
+    .inteligencia-melhoria .pontos {
+        padding-top: 35px;
+    }
+    .inteligencia-melhoria .pontos ul li {
+        font-size: 14px;
+    }
+    .fale-body-field label {
+        font-size: 13px;
+    }
+    .fale-body-field input {
+        font-size: 13px;
+    }
+    .bt-enviar {
+        font-size: 15px;
+    }
+    footer .container {
+        grid-template-columns: 260px auto 105px;
+    }
+    footer .logo, footer .logo a {
+        width: 260px;
+        height: auto;
+        padding-top: 13px;
+    }
+
+}
+
+@media (max-width: 425px) {
+
+    .logo {
+        width: 150px;
+        padding-top: 6px;
+    }
+    .main-nav {
+        display: none;
+    }
+
+    .apresentacao {
+        background-position: right top;
+    }
+    .apresentacao .container {
+        padding: 50px;
+    }
+    .apresentacao .texto {
+        width: 100%;
+    }
+    .legalcode .container {
+        padding-top: 40px;
+    }
+    .legalcode .logo {
+        width: 300px;
+        min-height: 130px;
+    }
+    .titulo {
+        padding: 0 20px;
+    }
+    .titulo h2 {
+        font-size: 28px;
+        padding: 0 0px 14px;
+    }
+    .titulo p {
+        font-size: 15px;
+        padding: 0 20px;
+    }
+
+
+    .legalcode .areas .img1 {
+        display: none;
+    }
+    .legalcode .areas .img2 {
+        display: block;
+    }
+    .legalcode .areas .aI,
+    .legalcode .areas .rpa,
+    .legalcode .areas .risk,
+    .legalcode .areas .assembly {
+        display: block;
+    }
+
+            .legalcode .areas div {
+                font-size: 20px;
+            }
+            .legalcode .areas .aI {
+                left: 30px;
+                top: 30px;
+            }
+            .legalcode .areas .rpa {
+                right: 95px;
+                left: auto;
+                top: 30px;
+            }
+            .legalcode .areas .risk {
+                left: 90px;
+                top: auto;
+                bottom: 40px;
+            }
+            .legalcode .areas .assembly {
+                left: auto;
+                top: auto;
+                right: 20px;
+                bottom: 40px;
+            }
+
+    .mb-padrao-understanding {
+        margin-bottom: 70px;
+    }
+    .template1 {
+        flex-direction: column;
+        padding: 0 30px;
+        margin-bottom: 80px;
+    }
+    .template1 .ilustracao {
+        width: 100%;
+        text-align: center;
+        margin-bottom: 30px;
+        order: 2;
+    }
+    .template1 .conteudo {
+        margin-bottom: 50px;
+    }
+    .template1 .conteudo h3 {
+        font-size: 25px;
+        text-align: center;
+    }
+    .template2 .conteudo {
+        padding-right: 0;
+        margin-bottom: 50px;
+    }
+    .inteligencia-melhoria .container {
+        flex-direction: column;
+    }
+    .inteligencia-melhoria .pontos {
+        padding-left: 60px;
+    }
+    .inteligencia-melhoria .container {
+        margin-bottom: 100px;
+    }
+    .fale {
+        margin-bottom: 50px;
+    }
+    .fale-body {
+        flex-direction: column;
+    }
+    footer .container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding-bottom: 30px;
+    }
+    footer .logo {
+        order: 2;
+    }
+    footer .linha-container {
+        display: none;
+    }
+
+}
+
+
+
+@media (max-width: 320px) {
+    
+    header .container {
+        padding-left: 20px;
+    }
+    .logo {
+        width: 120px;
+        padding-top: 12px;
+    }
+    .social li {
+        padding-left: 8px;
+    }
+    .social li a {
+        width: 17px;
+    }
+    .legalcode .logo {
+        width: 240px;
+        min-height: 130px;
+    }
+    .legalcode .areas {
+        padding: 0 15px;
+    }
+    .legalcode .areas .aI {
+        left: 10px;
+        top: 17px;
+    }
+    .legalcode .areas .rpa {
+        right: 99px;
+        left: auto;
+        top: 17px;
+    }
+    .legalcode .areas .risk {
+        left: 90px;
+        top: auto;
+        bottom: 20px;
+    }
+    .legalcode .areas .assembly {
+        left: auto;
+        top: auto;
+        right: 13px;
+        bottom: 20px;
+    }
+    .inteligencia-melhoria .pontos {
+        padding-left: 50px;
+        padding-right: 20px;
+    }
+
+}
+
+/* 
+    #f8b032 laranja
+*/

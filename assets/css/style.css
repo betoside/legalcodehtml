@@ -445,7 +445,7 @@ footer .nav-social { padding-top: 14px; width: 105px; }
 
 @media (max-width: 425px) {
 
-    .nav-main {
+    .main-nav {
         flex-direction: column;
         display: none;
         position: absolute;
@@ -456,14 +456,14 @@ footer .nav-social { padding-top: 14px; width: 105px; }
         background-color: #043c5b;
         padding-right: 15px;
     }
-    .nav-main li {
+    .main-nav li {
         border-top: 1px solid #f8b032;
     }
-    .nav-main li a {
+    .main-nav li a {
         height: 63px;
         border-bottom: 0;
     }
-    .nav-main li a:hover { 
+    .main-nav li a:hover { 
         border-bottom: 0;
     }
     /* 

@@ -336,13 +336,19 @@ header .container {
     color: #f19004;
 }
 
-footer { border-bottom: 24px solid #f8af31; }
-footer .container { display: grid; grid-template-columns: 340px auto 105px; padding-bottom: 55px; }
+footer { border-bottom: 40px solid #f8af31; }
+footer .container { display: grid; grid-template-columns: 340px auto 105px; padding-bottom: 55px; position: relative; }
 footer .logo,
 footer .logo a { width: 340px; height: 115px; }
 footer .linha-container { padding: 61px 25px 0; }
 footer .linha-container .linha { border-bottom: 7px solid #f8af31; }
 footer .nav-social { padding-top: 14px; width: 105px; }
+footer .politica {
+    position: absolute;
+    bottom: -30px;
+    left: 25px;
+}
+footer .politica a { color: #000;}
 
 @media (max-width:1110px) {
 

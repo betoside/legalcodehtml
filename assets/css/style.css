@@ -103,7 +103,7 @@ header .container {
 }
 .apresentacao {
     background: url(../images/apresentacao.jpg) no-repeat #000;
-    /* background-size: cover; */
+    background-size: cover;
     background-position: center;
     border-bottom: 1px solid #5f4201;
 
@@ -121,6 +121,17 @@ header .container {
 }
 .apresentacao .texto p:first-child {
     margin-top: 0;
+}
+.politica .container {
+    padding: 85px 85px 70px 85px;
+    color: #f19004;
+}
+.politica .container a {
+    color: #fff;
+}
+.politica ul,
+.politica p {
+    margin-bottom: 40px;
 }
 .borda-horizontal {
     border-bottom: 1px solid #b99607;

@@ -98,11 +98,13 @@ header .container {
     background-color: #000;
     text-align: center;
 }
+.slider-area video,
 .slider-area img {
     max-width: 100%;
+    outline: none;
 }
 .apresentacao {
-    background: url(../images/apresentacao.jpg) no-repeat #000;
+    background: url(../images/apresentacao2.jpg) no-repeat #000;
     background-size: cover;
     background-position: center;
     border-bottom: 1px solid #5f4201;

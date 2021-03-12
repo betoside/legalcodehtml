@@ -98,8 +98,13 @@ header .container {
     background-color: #000;
     text-align: center;
 }
+.slider-area .container {
+    width: 100%;
+    max-width: 100%;
+}
 .slider-area video,
 .slider-area img {
+    width: 100%;
     max-width: 100%;
     outline: none;
 }

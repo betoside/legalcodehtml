@@ -82,6 +82,7 @@ header .container {
     display: flex;
     height: 105px;
     align-items: center;
+    display: none;
 }
 .social li {
     padding-left: 5px;

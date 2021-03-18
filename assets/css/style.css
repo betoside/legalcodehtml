@@ -354,6 +354,23 @@ header .container {
     color: #f19004;
 }
 
+
+.embreve {
+    width: 100vw;
+    height: 100vh;
+    background: url(../images/legalcode-grafismo.jpg) no-repeat;
+    background-size: 100%;
+    background-position: bottom;
+    display: flex;
+    align-items: center;
+}
+.embreve .logo {
+    margin: 0 auto 40px;
+    width: 586px;
+    min-height: 200px;
+}
+
+
 footer { border-bottom: 40px solid #f8af31; }
 footer .container { display: grid; grid-template-columns: 340px auto 105px; padding-bottom: 55px; position: relative; }
 footer .logo,

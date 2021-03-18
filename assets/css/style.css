@@ -109,9 +109,9 @@ header .container {
     outline: none;
 }
 .apresentacao {
-    background: url(../images/apresentacao2.jpg) no-repeat #000;
-    background-size: cover;
-    background-position: center;
+    background: url(../images/arcos.png) no-repeat #000;
+    background-size: 33%;
+    background-position: 87% 80%;
     border-bottom: 1px solid #5f4201;
 
 }

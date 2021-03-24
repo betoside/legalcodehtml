@@ -317,9 +317,10 @@ header .container {
     border: 2px solid #f8b032;
     font-family: arial;
     font-size: 17px;
-    color: #000;
+    color: #fff;
     padding: 10px;
     outline: 0;
+    background-color: #313131;
 }
 .fale-body-field.bt { 
     text-align: right; 
@@ -338,8 +339,9 @@ header .container {
     width: 100%;
     /* margin-right: 27px; */
     font-size: 17px;
-    color: #000;
+    color: #fff;
     outline: 0;
+    background-color: #313131;
 }
 .bt-enviar {
     font-size: 19px;
@@ -386,6 +388,71 @@ footer .politica {
     left: 25px;
 }
 footer .politica a { color: #000;}
+
+
+.section-politica {
+    display: none;
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 10;
+    width: 100%;
+    height:100vh;
+    /* background-color: rgba(248, 176, 50, 0.5); */
+    background-color: rgba(0, 0, 0, 0.8);
+    overflow: hidden;
+}
+.section-politica .container-itens {
+    position: absolute;
+    width: 100vw;
+    left: 0;
+    bottom: 0;
+    background-color: #313131;
+    padding: 20px 30px 15px 15px;
+    font-family: 'BiomeW04Regular';
+    color: #f8b032;
+}
+.container-itens .tit {
+    text-align: center;
+}
+.container-itens .box-txt-bt {
+    display: flex;
+}
+.container-itens .box-txt-bt p {
+    margin-bottom: 10px;
+}
+.container-itens .box-txt-bt .p1 {
+    font-size: 14px;
+}
+.container-itens .box-txt-bt .p2 {
+    font-size: 12px;
+}
+.container-itens .box-txt-bt .p3 {
+    font-size: 10px;
+}
+.container-itens .box-txt-bt .botoes {
+    width: 490px;
+    padding-left: 15px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.container-itens .box-txt-bt .botoes button {
+    border: 1px solid #f8b032;
+    color: #f8b032;
+    background-color: #313131;
+    width: 47%;
+    height: 28px;
+    font-size: 11px;
+    line-height: 24px;
+    margin-bottom: 8px;
+    display: inline-block;
+    cursor: pointer;
+}
+.container-itens .box-txt-bt .botoes button.aceitar {
+    width: 100%;
+    flex-grow: 3;
+}
 
 @media (max-width:1110px) {
 

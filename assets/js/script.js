@@ -11,7 +11,23 @@ $(function(){
             scrollTop: targetOffset - 100
         }, 500);
     });
-})
+
+    jQuery(window).scroll(function () {
+        if (jQuery(this).scrollTop() > 500) {
+            document.querySelector('.botao-topo').style.width = '40px';
+        } else {
+            document.querySelector('.botao-topo').style.width = '';
+        }
+    });
+
+    document.querySelector('.botao-topo').addEventListener('click',()=>{
+        console.log('pah');
+        jQuery('body,html').animate({
+            scrollTop: 0
+          }, 800);
+         return false;
+    });
+});
 
 window.onload = ()=>{
     document.querySelector('.menu-mobile').addEventListener('click',()=>{

@@ -39,6 +39,37 @@ body {
     max-width: 1200px;
     margin: 0 auto;
 }
+.botao-topo {
+    background-color: #f8b032;
+    font-weight: bold;
+    font-size: 20px;
+    position: fixed;
+    right: 0;
+    top: 74vh;
+    width: 0;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow-x:hidden;
+    cursor: pointer;
+
+    transition:all ease .2s;
+
+    -webkit-border-top-left-radius: 10px;
+    -webkit-border-top-right-radius: 10px;
+    -moz-border-radius-topleft: 10px;
+    -moz-border-radius-topright: 10px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+
+    -webkit-transform: rotate(-90deg);
+    -moz-transform: rotate(-90deg);
+    -o-transform: rotate(-90deg);
+    -ms-transform: rotate(-90deg);
+    transform: rotate(-90deg);
+}
+
 header {
     background-color: #000000;
 }
@@ -464,6 +495,7 @@ footer .politica strong {
     width: 100%;
     flex-grow: 3;
 }
+
 
 @media (max-width:1110px) {
 

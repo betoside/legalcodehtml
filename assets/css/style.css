@@ -401,7 +401,7 @@ footer .politica strong {
 
 
 .section-politica {
-    display: none;
+    /* display: none; */
     position: absolute;
     left: 0;
     top: 0;
@@ -442,6 +442,7 @@ footer .politica strong {
 }
 .container-itens .box-txt-bt .botoes {
     width: 490px;
+    padding-top: 20px;
     padding-left: 15px;
     display: flex;
     flex-wrap: wrap;

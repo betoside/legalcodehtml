@@ -23,3 +23,6 @@ window.onload = ()=>{
     })
 };
 
+document.querySelector('.aceitar').addEventListener('click',()=>{
+    document.querySelector('.section-politica').style.display = 'none';
+});

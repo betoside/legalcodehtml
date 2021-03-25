@@ -267,7 +267,7 @@ header .container {
 }
 
 .inteligencia-melhoria .container {
-    margin-bottom: 100px;
+    margin-bottom: 130px;
 }
 .inteligencia-melhoria .container {
     display: flex;
@@ -389,8 +389,9 @@ footer .politica .container {
     display: block;
     padding: 20px;
     color: #000;
+    text-align: center;
 }
-footer .politica a {
+footer .politica .mailto {
     color: #000;
 }
 footer .politica strong {

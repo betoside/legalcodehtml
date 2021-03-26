@@ -34,7 +34,6 @@ Email: ". $email . "
 Empresa: ". $empresa . "
 Telefone: ". $telefone . "
 
-
 ".$_POST['msg'];
 
 $tituloAgradecimento = "Muito obrigado";

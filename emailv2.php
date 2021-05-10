@@ -1,7 +1,7 @@
 <?php
-if (empty($_POST)) {
-    header('Location: index.html');
-}
+// if (empty($_POST)) {
+//     header('Location: index.html');
+// }
 
 // MSG ESTÁTICA TESTE
 // ==================
@@ -80,7 +80,7 @@ $headers = 'From: '. $email . "\r\n" .
     'Reply-To: '. $email . "\r\n" .
     'X-Mailer: PHP/' . phpversion();
 
-mail($to, $subject, $msg, $headers);
+// mail($to, $subject, $msg, $headers);
 ?>
 
 <!DOCTYPE html>
@@ -142,7 +142,7 @@ mail($to, $subject, $msg, $headers);
         </div>
     </header>
 
-    <section class="apresentacao">
+    <section class="apresentacao no-border">
         <div class="container">
             <div class="titulo mb-padrao-understanding" id='sobre'>
                 <h2><?php echo $tituloAgradecimento;?></h2>
@@ -160,7 +160,7 @@ mail($to, $subject, $msg, $headers);
         </div>
     </section>
 
-    <div class="borda-horizontal"></div>
+    <!-- <div class="borda-horizontal"></div> -->
 
     <footer>
         <div class="container">
@@ -197,10 +197,17 @@ mail($to, $subject, $msg, $headers);
                     </li>
                 </ul>
             </div>
-            <div class="politica">
+        </div>
+        <div class="politica">
+            <div class="container">
+                <strong>Porto Digital</strong> - Rua Domingos José Martins, nº 75, sala 107, Bairro do Recife, Recife-PE - CEP: 50.030-200
+                <br>
+                <br>
+                <a class="mailto" href="mailto:contato@legalcode.ai">contato@legalcode.ai</a>
+                <br>
+                <br>
                 <a href="politica.html" target="_blank">Política de privacidade</a>
             </div>
-
         </div>
     </footer>
 

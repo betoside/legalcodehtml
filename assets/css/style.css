@@ -16,6 +16,7 @@
          url('fonts/BiomeW04Regular.ttf') format('truetype'),
          url('fonts/BiomeW04Regular.svg#BiomeW04Regular') format('svg');
 }
+.no-border { border: 0px solid transparent !important; }
 .dn {
     display: none;
 }

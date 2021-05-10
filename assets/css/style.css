@@ -115,19 +115,25 @@ header .container {
     display: flex;
     height: 105px;
     align-items: center;
-    display: none;
+    /* display: none; */
 }
 .social li {
     padding-left: 5px;
     list-style: none;
+
 }
 .social li a {
-    display: inline-block;
+    display: block;
     width: 21px;
 }
 .social li a svg {
     fill: #F8B032;
 }
+
+.ico-idioma {
+    width: 21px;
+}
+
 .slider-area {
     background-color: #000;
     text-align: center;
